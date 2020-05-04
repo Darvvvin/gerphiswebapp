@@ -235,6 +235,19 @@ app.get('/darvin', function(req,res){
 	res.render('darvin');
 });
 
+//Gian is coding here
+app.get('/lo', function(req,res){
+	res.render('lo');
+});
+
+app.get('/miranda', function(req,res){
+	res.render('miranda');
+});
+
+app.get('/mauricio', function(req,res){
+	res.render('mauricio');
+});
+
 app.listen(port, function() {
 	console.log('App listening at port ' + port)
 })
