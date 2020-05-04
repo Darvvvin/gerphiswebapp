@@ -1,5 +1,5 @@
 {
-  "name": "darvin_node_test",
+  "name": "darvin_takehome",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "hbs": "^4.1.0"
   }
 }
