@@ -34,8 +34,9 @@ app.get('/', function(req, res) {
 		title: 'Families',
 		families: [
 			{
-				name: 'a',
-				description: 'a',
+				image: 'lopez.jpg',
+				name: 'Lopez',
+				description: 'Lorem ipsum dolor sit amet,',
 			},
 			{
 				name: '1',
@@ -228,6 +229,10 @@ app.get('/activities', function(req, res) {
 			},
 		]
 	})
+});
+
+app.get('/darvin', function(req,res){
+	res.render('darvin');
 });
 
 app.listen(port, function() {
