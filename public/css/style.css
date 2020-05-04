@@ -1,5 +1,6 @@
 body {
 	font-family: 'Sen', sans-serif;
+	padding: 0;
 }
 
 h1 {
@@ -10,4 +11,9 @@ h1 {
 #profile-pic {
 	border-radius: 50%;
 	width: 150px;
+}
+
+.container-custom {
+	margin-right: 10em;
+	margin-left: 10em;
 }

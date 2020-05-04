@@ -31,7 +31,73 @@ app.set('view engine', 'hbs');
 //Home Route
 app.get('/', function(req, res) {
 	res.render('home', {
-		title: 'Welcome',
+		title: 'Families',
+		families: [
+			{
+				name: 'a',
+				description: 'a',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description :'1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+			{
+				name: '1',
+				description: '1',
+			},
+		],
 	})
 });
 
