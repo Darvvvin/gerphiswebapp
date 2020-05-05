@@ -147,32 +147,39 @@ app.get('/bernal', function(req,res){
 
 //Gian is coding here
 app.get('/contemprato', function(req,res){
-	res.render('contemprato');
+	res.render('contemprato', {
 		title: 'Contemprato'
+	});
 });
 
 app.get('/guce', function(req,res){
-	res.render('guce');
+	res.render('guce', {
 		title: 'Guce'
+	});
 });
 
 app.get('/mauricio', function(req,res){
-	res.render('mauricio');
+	res.render('mauricio', {
+		title: 'Mauricio'
+	});
 });
 
 app.get('/hilomen', function(req,res){
 	res.render('hilomen', {
 		title: 'Hilomen'
+	});
 });
 
 app.get('/lo', function(req,res){
 	res.render('lo', {
 		title: 'Lo'
+	});
 });
 
 app.get('/lopez', function(req,res){
 	res.render('lopez', {
 		title: 'Lopez'
+	});
 });
 
 app.listen(port, function() {
