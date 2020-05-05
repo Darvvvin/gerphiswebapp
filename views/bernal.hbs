@@ -4,32 +4,7 @@ Use Mouse to Pan around the Family Tree
 <script type="text/javascript">
 window.onload = function () { 
 
-    var familyGroupTag = {
-        group: true,
-        template: "group_grey",
-        groupState: OrgChart.EXPAND
-    };
-
-
-    var chart = new OrgChart(document.getElementById("tree"), {
-        template: "diva",
-        enableDragDrop: false,
-        zoom: false,
-
-        nodeBinding: {
-            field_0: "name",
-            field_1: "title",
-            img_0: "img"
-        },
-
-        tags: {
-            f1: familyGroupTag,
-            f2: familyGroupTag,
-            f3: familyGroupTag,
-            f4: familyGroupTag,
-            f5: familyGroupTag
-        },
-        nodes: [
+    var nodez = [
             { id: 1, tags: ["f1"], name: "Bernal, Jose", img: "imgs/members/bernaljose.jpg" },
             { id: 2, tags: ["f1"], name: "Bernal, Adorcion", title: "BD: 2/9/1940", img: "imgs/members/bernaladorcion.jpg" },
 
@@ -38,7 +13,8 @@ window.onload = function () {
 
             { id: 10, pid: 4, name: "Bernal, Kyle", img: "imgs/members/bernalvincent.jpg" },
             { id: 11, pid: 4, name: "Bernal, Ryan", img: "imgs/members/bernalryan.jpg" },
-        ]
-    });
+    ];
+
+    {{> prereq}}
 };
 </script>

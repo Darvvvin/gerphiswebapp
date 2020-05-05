@@ -3,33 +3,7 @@ Use Mouse to Pan around the Family Tree
 
 <script type="text/javascript">
 window.onload = function () { 
-
-    var familyGroupTag = {
-        group: true,
-        template: "group_grey",
-        groupState: OrgChart.EXPAND
-    };
-
-
-    var chart = new OrgChart(document.getElementById("tree"), {
-        template: "diva",
-        enableDragDrop: false,
-        zoom: false,
-
-        nodeBinding: {
-            field_0: "name",
-            field_1: "title",
-            img_0: "img"
-        },
-
-        tags: {
-            f1: familyGroupTag,
-            f2: familyGroupTag,
-            f3: familyGroupTag,
-            f4: familyGroupTag,
-            f5: familyGroupTag
-        },
-        nodes: [
+        var nodez = [
             { id: 1, tags: ["f1"], name: "Ma. Pilar D. Collantes", img: "imgs/members/collantespilar.jpg" },
             { id: 2, tags: ["f1"], name: "Unknown", img: "imgs/members/unknown.jpg" },
             { id: 3, tags: ["f2"], pid: 2, name: "Ma. Pilar D. Collantes II", img: "imgs/members/collantespilarii.jpg" },
@@ -39,7 +13,8 @@ window.onload = function () {
             { id: 6, tags: ["f3"], pid: 4, name: "Gladys P. Collantes", img: "imgs/members/collantesgladys.jpg" },
             { id: 10, pid: 6, name: "Gian Franco P. Collantes", img: "imgs/members/collantesgian.jpg" },
             { id: 11, pid: 6, name: "Gabrielle Francesca  P. Collantes", img: "imgs/members/collantesfrancesca.jpg" },
-        ]
-    });
+        ];
+
+        {{> prereq }}
 };
 </script>
