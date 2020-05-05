@@ -146,16 +146,33 @@ app.get('/bernal', function(req,res){
 });
 
 //Gian is coding here
-app.get('/lo', function(req,res){
-	res.render('lo');
+app.get('/contemprato', function(req,res){
+	res.render('contemprato');
+		title: 'Contemprato'
 });
 
-app.get('/miranda', function(req,res){
-	res.render('miranda');
+app.get('/guce', function(req,res){
+	res.render('guce');
+		title: 'Guce'
 });
 
 app.get('/mauricio', function(req,res){
 	res.render('mauricio');
+});
+
+app.get('/hilomen', function(req,res){
+	res.render('hilomen', {
+		title: 'Hilomen'
+});
+
+app.get('/lo', function(req,res){
+	res.render('lo', {
+		title: 'Lo'
+});
+
+app.get('/lopez', function(req,res){
+	res.render('lopez', {
+		title: 'Lopez'
 });
 
 app.listen(port, function() {
