@@ -145,6 +145,12 @@ app.get('/bernal', function(req,res){
 	});
 });
 
+app.get('/collantes', function(req,res){
+	res.render('collantes', {
+		title: 'Collantes'
+	});
+});
+
 app.listen(port, function() {
 	console.log('App listening at port ' + port)
 })
