@@ -12,23 +12,9 @@ window.onload = function () {
 
 
     var chart = new OrgChart(document.getElementById("tree"), {
-        template: "diva",
-        enableDragDrop: false,
-        zoom: false,
+        
+        {{> prereq}}
 
-        nodeBinding: {
-            field_0: "name",
-            field_1: "title",
-            img_0: "img"
-        },
-
-        tags: {
-            f1: familyGroupTag,
-            f2: familyGroupTag,
-            f3: familyGroupTag,
-            f4: familyGroupTag,
-            f5: familyGroupTag
-        },
         nodes: [
             { id: 1, tags: ["f1"], name: "Darvin, Isaias T", img: "imgs/members/unknown.jpg" },
             { id: 2, tags: ["f1"], name: "Pacifico, Josefa",  img: "imgs/members/unknown.jpg" },
