@@ -145,6 +145,12 @@ app.get('/bernal', function(req,res){
 	});
 });
 
+app.get('/collantes', function(req,res){
+	res.render('collantes', {
+		title: 'Collantes'
+	});
+});
+
 //Gian is coding here
 app.get('/contemprato', function(req,res){
 	res.render('contemprato', {
