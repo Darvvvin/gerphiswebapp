@@ -34,205 +34,115 @@ app.get('/', function(req, res) {
 		title: 'Families',
 		families: [
 			{
+				image: 'bernal.jpg',
+				name: 'Bernal',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'bernal'
+			},
+			{
+				image: 'cajita.jpg',
+				name: 'Cajita',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'cajita'
+			},
+			{
+				image: 'chua.jpg',
+				name: 'Chua',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'chua'
+			},
+			{
+				image: 'collantes.jpg',
+				name: 'Collantes',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'collantes'
+			},
+			{
+				image: 'contemprato.jpg',
+				name: 'Contemprato',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'contemprato'
+			},
+			{
+				image: 'darvin.jpg',
+				name: 'Darvin',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'darvin'
+			},
+			{
+				image: 'guce.jpg',
+				name: 'Guce',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'guce'
+			},
+			{
+				image: 'hilomen.jpg',
+				name: 'Hilomen',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'hilomen'
+			},
+			{
+				image: 'lo.jpg',
+				name: 'Lo',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'lo'
+			},
+			{
 				image: 'lopez.jpg',
 				name: 'Lopez',
 				description: 'Lorem ipsum dolor sit amet,',
+				link: 'lopez'
 			},
 			{
-				name: '1',
-				description: '1',
+				image: 'manguera.jpg',
+				name: 'Manguera',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'manguera'
 			},
 			{
-				name: '1',
-				description: '1',
+				image: 'mauricio.jpg',
+				name: 'Mauricio',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'mauricio'
 			},
 			{
-				name: '1',
-				description: '1',
+				image: 'miranda.jpg',
+				name: 'Miranda',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'miranda'
 			},
 			{
-				name: '1',
-				description: '1',
+				image: 'nanawa.jpg',
+				name: 'Nanawa',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'nanawa'
 			},
 			{
-				name: '1',
-				description :'1',
+				image: 'san.jpg',
+				name: 'San Juan',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'san'
 			},
 			{
-				name: '1',
-				description: '1',
-			},
-			{
-				name: '1',
-				description: '1',
-			},
-			{
-				name: '1',
-				description: '1',
-			},
-			{
-				name: '1',
-				description: '1',
-			},
-			{
-				name: '1',
-				description: '1',
-			},
-			{
-				name: '1',
-				description: '1',
-			},
-			{
-				name: '1',
-				description: '1',
-			},
-			{
-				name: '1',
-				description: '1',
-			},
-			{
-				name: '1',
-				description: '1',
-			},
-			{
-				name: '1',
-				description: '1',
+				image: 'villanueva.jpg',
+				name: 'Villanueva',
+				description: 'Lorem ipsum dolor sit amet,',
+				link: 'Villanueva'
 			},
 		],
-	})
-});
-
-app.get('/profile', function(req, res) {
-	res.render('profile', {
-		title: 'Profile',
-
-		name: 'Jacob Darvin',
-		idprefix: '118',
-		course: 'BS CSS-ST',
-	})
-});
-
-app.get('/academics', function(req, res) {
-	res.render('academics', {
-		title: 'Courses Taken',
-		frosh: [
-			{
-				course_code: 'GDPROG1',
-				faculty: 'Esguerrera',
-			},
-			{
-				course_code: 'BASMATH',
-				faculty: 'Lawas',
-			},
-			{
-				course_code: 'BASTAT',
-				faculty: 'Ocampo',
-			},
-			{
-				course_code: 'GEPCOMM',
-				faculty: 'Pili',
-			},
-			{
-				course_code: 'NSTP101',
-				faculty: 'Laranga',
-			},
-			{
-				course_code: 'CCDSTRU',
-				faculty: 'Gendrano',
-			},
-			{
-				course_code: 'GDPROG2',
-				faculty: 'Dimaunahan',
-			},
-			{
-				course_code: 'CSMATH1',
-				faculty: 'Gervacio',
-			},
-			{
-				course_code: 'GEARTAP',
-				faculty: 'Marasigan',
-			},
-			{
-				course_code: 'GEMATW',
-				faculty: 'Candelaria',
-			},
-			{
-				course_code: 'GEUSELF',
-				faculty: 'Reyes',
-			},
-			{
-				course_code: 'LCLSONE',
-				faculty: 'Magpantay',
-			},
-			{
-				course_code: 'GDPROG3',
-				faculty: 'Esguerrera',
-			},
-			{
-				course_code: 'CSMATH2',
-				faculty: 'Esguerrera',
-			},
-			{
-				course_code: 'GEFILI1',
-				faculty: 'Donnes',
-			},
-			{
-				course_code: 'GEFTWEL',
-				faculty: 'Calabio',
-			},
-			{
-				course_code: 'LCFAITH',
-				faculty: 'Lacsa',
-			},
-			{
-				course_code: 'NSTP201',
-				faculty: 'Laranga',
-			},
-		],
-
-		sophmore: [
-			{
-				course_code: 'CCINFOM',
-				faculty: 'Esguerrera',
-			},
-			{
-				course_code: 'GDDASGO',
-				faculty: 'Neil Patrick',
-			},
-			{
-				course_code: 'CSINTSY',
-				faculty: 'Azcarraga',
-			},
-			{
-				course_code: 'GEDANCE',
-				faculty: 'Calabio',
-			},
-			{
-				course_code: 'GEFILI2',
-				faculty: 'Felicilda',
-			},
-		]
-	});
-});
-
-app.get('/activities', function(req, res) {
-	res.render('activities', {
-		title: 'Extra Curricular Activities',
-		profile: [
-			{
-				orgname: 'INDIE',
-				role: 'Internal Vice President',
-			},
-			{
-				orgname: 'LSCS',
-				role: 'Media And Publications Commitee',
-			},
-		]
 	})
 });
 
 app.get('/darvin', function(req,res){
-	res.render('darvin');
+	res.render('darvin', {
+		title: 'Darvin'
+	});
+});
+
+app.get('/bernal', function(req,res){
+	res.render('bernal', {
+		title: 'Bernal'
+	});
 });
 
 //Gian is coding here
