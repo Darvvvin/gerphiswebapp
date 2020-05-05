@@ -127,7 +127,7 @@ app.get('/', function(req, res) {
 				image: 'villanueva.jpg',
 				name: 'Villanueva',
 				description: 'Lorem ipsum dolor sit amet,',
-				link: 'Villanueva'
+				link: 'villanueva'
 			},
 		],
 	})
@@ -185,6 +185,12 @@ app.get('/lo', function(req,res){
 app.get('/lopez', function(req,res){
 	res.render('lopez', {
 		title: 'Lopez'
+	});
+});
+
+app.get('/san', function(req,res){
+	res.render('san', {
+		title: 'San Juan'
 	});
 });
 
