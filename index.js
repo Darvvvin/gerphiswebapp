@@ -139,6 +139,12 @@ app.get('/darvin', function(req,res){
 	});
 });
 
+app.get('/bernal', function(req,res){
+	res.render('bernal', {
+		title: 'Bernal'
+	});
+});
+
 app.listen(port, function() {
 	console.log('App listening at port ' + port)
 })
