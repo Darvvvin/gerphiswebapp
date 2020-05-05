@@ -1,4 +1,12 @@
-template: "diva",
+
+    var familyGroupTag = {
+        group: true,
+        template: "group_grey",
+        groupState: OrgChart.EXPAND
+    };
+
+    var chart = new OrgChart(document.getElementById("tree"), {
+        template: "diva",
         enableDragDrop: false,
         zoom: false,
         draggable: true,
@@ -30,3 +38,6 @@ template: "diva",
             f4: familyGroupTag,
             f5: familyGroupTag
         },
+
+        nodes: nodez
+    });
