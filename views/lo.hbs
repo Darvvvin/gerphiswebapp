@@ -4,39 +4,15 @@ Use Mouse to Pan around the Family Tree
 <script type="text/javascript">
 window.onload = function () { 
 
-    var familyGroupTag = {
-        group: true,
-        template: "group_grey",
-        groupState: OrgChart.EXPAND
-    };
+    nodez = [
+        { id: 1, tags: ["f1"], name: "Lo, Ernesto", title: "Born: 3/6/1941", img: "imgs/members/loernesto.jpg" },
+        { id: 2, tags: ["f1"], name: "Unknown", title: "", img: "imgs/members/unknown.jpg" },
+        { id: 3, tags: ["f2"], pid: 2, name: "Lo, Monet", title: "Born: 4/19/1972", img: "imgs/members/lomonet.jpg" },
+        { id: 4, tags: ["f2"], pid: 2, name: "Lo, Jonas", title: "Born: 8/17/1972", img: "imgs/members/lojonas.jpg" },
+        { id: 10, pid: 4, name: "Lo, Jone", title: "Born: 12/26/2004", img: "imgs/members/lojone.jpg" },
+        { id: 11, pid: 4, name: "Lo, Jacob", title: "Born: 5/17/2000", img: "imgs/members/lojacob.jpg" },
+    ];
 
-
-    var chart = new OrgChart(document.getElementById("tree"), {
-        template: "diva",
-        enableDragDrop: false,
-        zoom: false,
-
-        nodeBinding: {
-            field_0: "name",
-            field_1: "title",
-            img_0: "img"
-        },
-
-        tags: {
-            f1: familyGroupTag,
-            f2: familyGroupTag,
-            f3: familyGroupTag,
-            f4: familyGroupTag,
-            f5: familyGroupTag
-        },
-        nodes: [
-            { id: 1, tags: ["f1"], name: "Lo, Ernesto", title: "Born: 3/6/1941", img: "imgs/members/loernesto.jpg" },
-            { id: 2, tags: ["f1"], name: "Unknown", title: "", img: "imgs/members/unknown.jpg" },
-            { id: 3, tags: ["f2"], pid: 2, name: "Lo, Monet", title: "Born: 4/19/1972", img: "imgs/members/lomonet.jpg" },
-            { id: 4, tags: ["f2"], pid: 2, name: "Lo, Jonas", title: "Born: 8/17/1972", img: "imgs/members/lojonas.jpg" },
-            { id: 10, pid: 4, name: "Lo, Jone", title: "Born: 12/26/2004", img: "imgs/members/lojone.jpg" },
-            { id: 11, pid: 4, name: "Lo, Jacob", title: "Born: 5/17/2000", img: "imgs/members/lojacob.jpg" },
-        ]
-    });
+    {{> prereq}}
 };
 </script>
