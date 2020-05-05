@@ -133,6 +133,12 @@ app.get('/', function(req, res) {
 	})
 });
 
+app.get('/instructions', function(req,res){
+	res.render('instructions', {
+		title: 'Instructions'
+	});
+});
+
 app.get('/darvin', function(req,res){
 	res.render('darvin', {
 		title: 'Darvin'
