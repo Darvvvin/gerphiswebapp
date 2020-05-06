@@ -15,8 +15,14 @@
             pdf: { text: "Export PDF" },
             png: { text: "Export PNG" },
             svg: { text: "Export SVG" },
-            csv: { text: "Export CSV" }
+            csv: { text: "Export CSV" },
+            importCSV: { 
+                text: "Import CSV",
+                icon: OrgChart.icon.csv(24,24, '#7A7A7A'),
+                onClick: function(){ chart.importCSV(); }
+            },
         },
+
 
         nodeMenu: {
             details: { text: "Details" },
