@@ -1,0 +1,25 @@
+Use Mouse to Pan around the Family Tree
+<div id="tree"></div>
+
+<script type="text/javascript">
+window.onload = function () { 
+
+    var nodez = [
+            { id: 1, name: "Villanueva, Eduvigis L.", img: "imgs/members/villanuevaeduvigis.png" },
+            { id: 2, name: "Villanueva, Calixto B.", img: "imgs/members/villanuevacalixto.png" },
+            { id: 3, name: "Uy, Corazon D.", img: "imgs/members/uycorazon.png" },
+
+            { id: 4, pid: 2, name: "Villanueva, Jose Marcelo L.", img: "imgs/members/villanuevajosemarcelo.png" },
+            { id: 5, pid: 3, name: "Villanueva, Ma. Cecilia U.", img: "imgs/members/villanuevacecilia.png" },
+            
+            { id: 6, pid: 4, name: "Villanueva, Christian Garret U.", img: "imgs/members/villanuevagarret.png" },
+    ];
+    
+    var linkz = [
+        { from: 1, to: 2, template: "yellow" },
+        { from: 4, to: 5, template: "yellow" },
+    ]
+
+    {{> prereq}}
+};
+</script>

@@ -151,21 +151,9 @@ app.get('/bernal', function(req,res){
 	});
 });
 
-app.get('/cajita', function(req,res){
-	res.render('cajita', {
-		title: 'Cajita'
-	});
-});
-
 app.get('/collantes', function(req,res){
 	res.render('collantes', {
 		title: 'Collantes'
-	});
-});
-
-app.get('/chua', function(req,res){
-	res.render('chua', {
-		title: 'Chua'
 	});
 });
 

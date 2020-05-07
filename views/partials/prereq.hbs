@@ -7,9 +7,9 @@
 
     var chart = new OrgChart(document.getElementById("tree"), {
         template: "diva",
-        enableDragDrop: false,
-        zoom: false,
+        enableDragDrop: true,
         draggable: true,
+        mouseScrool: OrgChart.action.zoom,
         
         menu: {
             pdf: { text: "Export PDF" },
@@ -23,12 +23,15 @@
             },
         },
 
-
         nodeMenu: {
             details: { text: "Details" },
             add: { text: "Add New" },
             edit: { text: "Edit" },
             remove: { text: "Remove" },
+        },
+
+        dragDropMenu: {
+            addAsChild: { text: "Add as child" }
         },
 
         nodeBinding: {
@@ -45,5 +48,13 @@
             f5: familyGroupTag
         },
 
-        nodes: nodez
+        nodes: nodez,
+        clinks: linkz
+    });
+
+    chart.on('drop', function (sender, draggedNodeId, droppedNodeId) {
+        chart.removeClink(droppedNodeId, draggedNodeId);
+        chart.addClink(draggedNodeId, droppedNodeId, "", "yellow");
+        chart.draw();
+        return false;
     });
