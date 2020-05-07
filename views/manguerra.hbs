@@ -1,0 +1,30 @@
+Use Mouse to Pan around the Family Tree
+<div id="tree"></div>
+
+<script type="text/javascript">
+window.onload = function () { 
+
+    var nodez = [
+        { id: 1, name: "Manguerra, Vic", img: "imgs/members/unknown.jpg" },
+        { id: 2, name: "Manguerra, Leon", img: "imgs/members/unknown.jpg" },
+        { id: 3, name: "Cabanero, Robert", img: "imgs/members/unknown.jpg" },
+        { id: 4, name: "Cabanero, Naida", img: "imgs/members/unknown.jpg" },
+
+        { id: 5, pid: 2, name: "Manguerra, Reden", img: "imgs/members/unknown.jpg" },
+        { id: 6, pid: 3, name: "Manguerra, Peach", img: "imgs/members/unknown.jpg" },
+
+        { id: 7, pid: 5, name: "Manguerra, Camille", img: "imgs/members/unknown.jpg" },
+        { id: 8, pid: 5, name: "Manguerra, Francis", img: "imgs/members/unknown.jpg" },
+        { id: 9, pid: 5, name: "Manguerra, Andre", img: "imgs/members/unknown.jpg" },
+        { id: 10, pid: 5, name: "Manguerra, Charlize", img: "imgs/members/unknown.jpg" }
+    ]
+
+    var linkz = [
+        { from: 1, to: 2, template: "yellow" },
+        { from: 3, to: 4, template: "yellow" },
+        { from: 5, to: 6, template: "yellow" },
+    ]
+
+    {{> prereq}}
+};
+</script>

@@ -1,0 +1,22 @@
+Use Mouse to Pan around the Family Tree
+<div id="tree"></div>
+
+<script type="text/javascript">
+window.onload = function () { 
+
+    var nodez = [
+        { id: 1, name: "Nañawa, Jesus Fernando B.", img: "imgs/members/nanawajesusfernando.png" },
+        { id: 2, name: "Nañawa, Roselle A.", img: "imgs/members/nanawaroselle.png" },
+
+        { id: 3, pid: 1, name: "Nañawa, Ace Hector A.", img: "imgs/members/nanawaacehector.png" },
+        { id: 4, pid: 1, name: "Nañawa, Roi Tristan A.", img: "imgs/members/nanawaroitristan.png" },
+        { id: 5, pid: 1, name: "Nañawa, Alfred Brant A.", img: "imgs/members/nanawaalfredbrant.png" },
+    ]
+
+    var linkz = [
+        { from: 1, to: 2, template: "yellow" }
+    ]
+
+    {{> prereq}}
+};
+</script>
