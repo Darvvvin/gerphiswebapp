@@ -145,6 +145,19 @@ app.get('/darvin', function(req,res){
 	});
 });
 
+app.get('/chua', function(req,res){
+	res.render('chua', {
+		title: 'Chua'
+	});
+});
+
+app.get('/cajita', function(req,res){
+	res.render('cajita', {
+		title: 'Cajita'
+	});
+});
+
+
 app.get('/bernal', function(req,res){
 	res.render('bernal', {
 		title: 'Bernal'
