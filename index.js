@@ -214,7 +214,32 @@ app.get('/lopez', function(req,res){
 	});
 });
 
-app.get('/san', function(req,res){
+
+app.get('/miranda', function(req,res){
+	res.render('miranda', {
+		title: 'Miranda'
+	});
+});
+
+app.get('/manguerra', function(req,res){
+	res.render('manguerra', {
+		title: 'Manguerra'
+	});
+});
+
+app.get('/nanawa', function(req,res){
+	res.render('nanawa', {
+		title: 'Nanawa'
+	});
+});
+
+app.get('/villanueva', function(req,res){
+	res.render('villanueva', {
+		title: 'Villanueva'
+	});
+});
+
+app.get('/sanjuan', function(req,res){
 	res.render('san', {
 		title: 'San Juan'
 	});
