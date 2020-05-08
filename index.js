@@ -6,7 +6,11 @@ const handlebars = require('handlebars');
 
 //Application Init
 const app = express();
-const port = 9090;
+
+let port = process.env.PORT;
+if(port == null || port == "") {
+	port = 9090;
+}
 
 app.engine('hbs', exphbs({
 	extname: 'hbs',
