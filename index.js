@@ -139,6 +139,13 @@ app.get('/instructions', function(req,res){
 	});
 });
 
+app.get('/create', function(req,res){
+	res.render('create', {
+		title: 'Create'
+	});
+});
+
+
 app.get('/darvin', function(req,res){
 	res.render('darvin', {
 		title: 'Darvin'
