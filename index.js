@@ -243,8 +243,8 @@ app.get('/villanueva', function(req,res){
 	});
 });
 
-app.get('/san', function(req,res){
-	res.render('san', {
+app.get('/sanjuan', function(req,res){
+	res.render('sanjuan', {
 		title: 'San Juan'
 	});
 });
