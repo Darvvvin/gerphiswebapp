@@ -98,13 +98,13 @@ app.get('/', function(req, res) {
 				link: 'lopez'
 			},
 			{
-				image: 'manguera.jpg',
+				image: 'unknown.jpg',
 				name: 'Manguera',
 				description: 'Lorem ipsum dolor sit amet,',
 				link: 'manguera'
 			},
 			{
-				image: 'mauricio.jpg',
+				image: 'unknown.jpg',
 				name: 'Mauricio',
 				description: 'Lorem ipsum dolor sit amet,',
 				link: 'mauricio'
@@ -125,7 +125,7 @@ app.get('/', function(req, res) {
 				image: 'san.jpg',
 				name: 'San Juan',
 				description: 'Lorem ipsum dolor sit amet,',
-				link: 'san'
+				link: 'sanjuan'
 			},
 			{
 				image: 'villanueva.jpg',
