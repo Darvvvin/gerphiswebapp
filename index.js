@@ -99,9 +99,9 @@ app.get('/', function(req, res) {
 			},
 			{
 				image: 'unknown.jpg',
-				name: 'Manguera',
+				name: 'Manguerra',
 				description: 'Lorem ipsum dolor sit amet,',
-				link: 'manguera'
+				link: 'manguerra'
 			},
 			{
 				image: 'unknown.jpg',
