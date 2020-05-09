@@ -1,52 +1,28 @@
 Use Mouse to Pan around the Family Tree
 <div id="tree"></div>
-<hr>
-Detailed Graph
-<center>
-<div style="width: 960px; height: 720px; margin: 10px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:960px; height:720px" src="https://www.lucidchart.com/documents/embeddedchart/8705486c-4100-4f9f-a7f2-1b1aa3c51902" id="RiWWC6zr_APk"></iframe></div>
-</center>
 
 <script type="text/javascript">
 window.onload = function () {
 
-    var familyGroupTag = {
-        group: true,
-        template: "group_grey",
-        groupState: OrgChart.EXPAND
-    };
+    var nodez = [
+        { id: 1, name: "Hilomen, Norma V.", img: "imgs/members/hilomennorma.jpg" },
+        { id: 3, name: "Totanes, Raul E.", img: "imgs/members/hilomenraul.jpg" },
+        { id: 2, name: "Totanes, Celestina G.", img: "imgs/members/hilomencelestina.jpg" },
 
+        { id: 4, pid: 1, name: "Hilomen, Vincent V.", img: "imgs/members/hilomenvincent.jpg" },
+        { id: 5, pid: 3, name: "Hilomen, Maria Teresa T.", img: "imgs/members/hilomenteresa.jpg" },
 
-    var chart = new OrgChart(document.getElementById("tree"), {
-        template: "diva",
-        enableDragDrop: false,
-        zoom: false,
+        { id: 6, pid: 4, name: "Hilomen, Aaron T.", img: "imgs/members/hilomenaaron.jpg" },
+        { id: 7, pid: 4, name: "Hilomen-Evangelista, Judith T.", img: "imgs/members/hilomenjudith.jpg" },
+        { id: 8, pid: 4, name: "Hilomen Thea T.", img: "imgs/members/hilomenthea.jpg" },
+        { id: 9, pid: 4, name: "Hilomen, Jed T.", img: "imgs/members/hilomenjed.jpg" },
+    ]
 
-        nodeBinding: {
-            field_0: "name",
-            field_1: "title",
-            img_0: "img"
-        },
+    var linkz = [
+        { from: 2, to: 3, template: "yellow" },
+        { from: 4, to: 5, template: "yellow" },
+    ]
 
-        tags: {
-            f1: familyGroupTag,
-            f2: familyGroupTag,
-            f3: familyGroupTag,
-            f4: familyGroupTag,
-            f5: familyGroupTag
-        },
-        nodes: [
-            { id: 1, tags: ["f1"], name: "Hilomen, Norma V.", img: "imgs/members/hilomennorma.jpg" },
-            { id: 2, tags: ["f2"], name: "Totanes, Raul E.", img: "imgs/members/hilomenraul.jpg" },
-            { id: 3, tags: ["f2"], name: "Totanes, Celestina G.", img: "imgs/members/hilomencelestina.jpg" },
-
-            { id: 4, tags: ["f3"], pid: 1, name: "Hilomen, Vincent V.", img: "imgs/members/hilomenvincent.jpg" },
-            { id: 5, tags: ["f3"], pid: 3, name: "Hilomen, Maria Teresa T.", img: "imgs/members/hilomenteresa.jpg" },
-
-            { id: 6, pid: 5, name: "Hilomen, Aaron T.", img: "imgs/members/hilomenaaron.jpg" },
-            { id: 7, pid: 5, name: "Hilomen-Evangelista, Judith T.", img: "imgs/members/hilomenjudith.jpg" },
-            { id: 8, pid: 5, name: "Hilomen Thea T.", img: "imgs/members/hilomenthea.jpg" },
-            { id: 9, pid: 5, name: "Hilomen, Jed T.", img: "imgs/members/hilomenjed.jpg" },
-        ]
-    });
+    {{> prereq}}
 };
 </script>
